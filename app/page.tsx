@@ -21,10 +21,10 @@ export default function Home() {
         <div className="container flex h-[72px] items-center justify-between">
           <a href="#top" className="flex items-center gap-3"><span className="grid size-9 place-items-center rounded-xl bg-[#1769aa] text-white"><HeartPulse size={20} /></span><span className="font-display text-[20px] font-bold tracking-[-.04em] text-[#12304a]">Vaani<span className="text-[#18a7a0]">Doc</span></span></a>
           <div className="hidden items-center gap-8 md:flex"><a className="nav-link" href="#how">How it works</a><a className="nav-link" href="#features">Features</a><a className="nav-link" href="#impact">Impact</a><a className="nav-link" href="#about">About us</a></div>
-          <div className="hidden items-center gap-3 md:flex"><button className="btn-secondary">Log in</button><button className="btn-primary">Get started <ArrowRight size={16} /></button></div>
+          <div className="hidden items-center gap-3 md:flex"><a href="/login" className="btn-secondary">Log in</a><a href="/register" className="btn-primary">Get started <ArrowRight size={16} /></a></div>
           <button aria-label="Toggle menu" className="grid size-10 place-items-center rounded-lg border border-[#d9e7ee] md:hidden" onClick={() => setMobileOpen(!mobileOpen)}>{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button>
         </div>
-        {mobileOpen && <div className="container flex flex-col gap-5 border-t border-[#d9e7ee] py-5 md:hidden"><a className="nav-link" href="#how">How it works</a><a className="nav-link" href="#features">Features</a><a className="nav-link" href="#impact">Impact</a><button className="btn-primary w-full">Get started <ArrowRight size={16} /></button></div>}
+        {mobileOpen && <div className="container flex flex-col gap-5 border-t border-[#d9e7ee] py-5 md:hidden"><a className="nav-link" href="#how">How it works</a><a className="nav-link" href="#features">Features</a><a className="nav-link" href="#impact">Impact</a><a href="/register" className="btn-primary w-full">Get started <ArrowRight size={16} /></a></div>}
       </nav>
 
       <section id="top" className="overflow-hidden border-b border-[#d9e7ee] bg-[#f7fbfd]">
