@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+:root { --navy: #12304a; --blue: #1769aa; --teal: #18a7a0; --sky: #eaf5fb; --ink: #1d3345; --muted: #6b8190; --line: #d9e7ee; --white: #ffffff; }
+@theme inline { --font-sans: var(--font-inter); --font-mono: ui-monospace; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: #f7fbfd; font-family: var(--font-inter), Arial, sans-serif; }
+.font-display { font-family: var(--font-poppins), var(--font-inter), sans-serif; }
+::selection { background: #bdebe9; color: var(--navy); }
+.container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+.nav-link { color: #5f7787; font-size: 14px; font-weight: 600; transition: color .2s ease; }
+.nav-link:hover { color: var(--blue); }
+.btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border-radius: 8px; background: var(--blue); color: white; padding: 13px 19px; font-weight: 700; font-size: 14px; box-shadow: 0 8px 18px rgba(23,105,170,.18); transition: transform .2s, background .2s; }
+.btn-primary:hover { background: #0d5b97; transform: translateY(-2px); }
+.btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border: 1px solid var(--line); border-radius: 8px; background: white; color: var(--navy); padding: 12px 17px; font-weight: 700; font-size: 14px; transition: border .2s, transform .2s; }
+.btn-secondary:hover { border-color: #8dbbce; transform: translateY(-2px); }
+.grid-paper { background-image: linear-gradient(#dcebf1 1px, transparent 1px), linear-gradient(90deg, #dcebf1 1px, transparent 1px); background-size: 27px 27px; }
+.hero-blob { border-radius: 47% 53% 40% 60% / 42% 38% 62% 58%; background: #e5f4f6; }
+.float-card { animation: float 5s ease-in-out infinite; }
+.float-card-delay { animation: float 5s 1.2s ease-in-out infinite; }
+@keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-8px) } }
+.reveal { animation: reveal .7s ease both; }
+@keyframes reveal { from { opacity: 0; transform: translateY(12px) } to { opacity: 1; transform: translateY(0) } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; } }

@@ -1,0 +1,30 @@
+{
+  "name": "vaanidoc",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.7.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "framer-motion": "^13.1.0",
+    "lucide-react": "latest",
+    "next": "latest",
+    "postcss": "^8.5.26",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-hook-form": "^7.85.0",
+    "recharts": "^3.10.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "latest",
+    "zod": "^4.4.3"
+  }
+}
